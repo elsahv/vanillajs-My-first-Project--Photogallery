@@ -14,7 +14,7 @@ html {
   justify-content: center;
   color: #607d8b;
   font-size: 45px;
-  margin: 35px;
+  margin: 15px;
   text-decoration: none;
 }
 
@@ -28,7 +28,7 @@ html {
 .nav-links li {
   display: inline;
   list-style: none;
-  padding: 0 25px 0 25px;
+  padding: 0 15px 0 15px;
   font-size: 20px;
 }
 
@@ -83,10 +83,12 @@ footer {
   }
 
   .logo {
-    font-size: 28px;
-    padding: 25px;
+    font-size: 18px;
+    padding: 5px;
     text-align: center;
     margin: auto;
+    border-bottom: dotted;
+    2px #607d8b;
   }
 
   .nav-links {
@@ -101,7 +103,7 @@ footer {
     align-items: center;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-    font-size: 65px;
+    font-size: 45px;
     z-index: 1;
     border: solid 2px #607d8b;
   }
@@ -206,6 +208,7 @@ footer {
   color: #fff;
   font-size: 35px;
   position: relative;
+  top: 15px;
   left: 222px;
 }
 
@@ -213,8 +216,8 @@ footer {
   position: relative;
   top: 265px;
   color: #fff;
-  height: 510px;
-  margin: 1.5px;
+  height: 480px;
+  margin: 5px;
 }
 
 #index-gallery .aboutside a {
@@ -276,21 +279,41 @@ footer {
 @media (max-width:768px) {
   #index-gallery {
     display: grid;
-    grid-template-columns: 1fr 100px;
+    grid-template-columns: 350px;
     grid-template-rows: auto;
     grid-gap: 10px;
     grid-template-areas:
       "img1"
       "img2"
       "img3"
-      "img4"
-      "img5"
+      "r"
+      "a"
       "img6"
-      "img7"
+      "l"
+  }
+
+  .aboutside span {
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    top: 115px;
+    left: 212px;
+  }
+
+  #index-gallery .aboutside a {
+    color: #fff;
+    font-size: 25px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
   }
 }
 
-/*about*/
+/*ABOUT*/
+.wrapper {
+  margin: 65px;
+}
+
 h1 {
   font-size: 45px;
   text-align: center;
@@ -305,23 +328,87 @@ h2 {
 
 p {
   text-align: center;
-  margin: auto;
+  margin: 25px;
   padding: 0;
-  font-size: 20px;
+  font-size: 23px;
+}
+
+.aboutpic {
+  background-image: url(images/about2.jpeg);
+  width: 600px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid 3px black;
+}
+
+.aboutpic2 {
+  background-image: url(images/mainpic2.jpeg);
+  width: 500px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid 3px black;
 }
 
 .not {
   text-align: center;
   font-size: 20px;
+  margin: 25px;
 }
 
-@media only screen and (max-width:768px) {}
+@media only screen and (max-width:768px) {
+  .wrapper {
+    margin: 15px;
+  }
+
+  .aboutpic {
+    background-image: url(images/about2.jpeg);
+    width: 350px;
+    height: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .aboutpic2 {
+    background-image: url(images/mainpic2.jpeg);
+    width: 350px;
+    height: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
 /*RECIPES*/
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+    border: solid 3px black;
+}
+
+.foodpic-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+.foodpics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  width: 1500px;
+  height: 455px;
 }
 
 .recipe-box {
@@ -330,8 +417,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0;
+  padding: 50px 0;
   background-color: #009688;
+  background-size: 100%;
+  border: solid 5px black;
 }
 
 .container {
@@ -346,6 +435,7 @@ img {
   font-size: 4rem;
   color: whitesmoke;
   margin-bottom: 30px;
+  text-shadow: 2px 2px 2px #4a1234;
 }
 
 form {
@@ -384,8 +474,8 @@ form ion-icon {
 .item {
   width: 100%;
   border-radius: 8px;
-  background-color: #8bc34a;
-  padding: 15px;
+  background-color: #4a1234;
+  padding: 5px;
   overflow: hidden;
 }
 
@@ -412,8 +502,10 @@ form ion-icon {
   text-decoration: none;
   text-align: center;
   width: 130px;
-  padding: 10px 0;
-  background-color: #f372a2;
+  padding: 10px 5px;
+  color: whitesmoke;
+  background-color: #009688;
+  border: solid 2px black;
   font-size: 20px;
   margin-top: 20px;
   align-self: flex-start;
