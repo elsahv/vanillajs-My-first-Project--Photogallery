@@ -278,6 +278,20 @@ footer {
 
 @media (max-width:768px) {
   #index-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: auto;
+  grid-gap: 5px;
+  grid-template-areas:
+    "img1 img2 img3"
+    "r     r      a"
+    "img6 img6    l"
+  ;
+}
+}
+
+@media (max-width:500px) {
+  #index-gallery {
     display: grid;
     grid-template-columns: 350px;
     grid-template-rows: auto;
@@ -394,22 +408,26 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-    border: solid 3px black;
+  border: solid 3px black;
 }
 
-.foodpic-wrapper {
+#foodpic-wrapper {
   display: flex;
   justify-content: center;
-  margin: 25px;
+
 }
 
 .foodpics {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1em;
-  width: 1500px;
-  height: 455px;
+  grid-template: auto/ repeat(auto-fit, minmax(250px, 1fr));
+  width: 1580px;
+  height: 535px;
+
 }
+
+
+
+
 
 .recipe-box {
   min-height: 100vh;
