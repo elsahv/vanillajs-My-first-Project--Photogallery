@@ -214,16 +214,17 @@ footer {
 
 #index-gallery .aboutside p {
   position: relative;
-  top: 265px;
+  top: 245px;
   color: #fff;
-  height: 480px;
+  height: 470px;
   margin: 5px;
+  text-align: left;
 }
 
 #index-gallery .aboutside a {
   color: #fff;
-  font-size: 25px;
-  margin: 15px;
+  font-size: 20px;
+  margin-bottom: 15px;
   display: flex;
   justify-content: flex-end;
 }
@@ -411,22 +412,11 @@ img {
   border: solid 3px black;
 }
 
-#foodpic-wrapper {
-  display: flex;
-  justify-content: center;
 
+.recipe_pic{
+  background-image: url(images/img9.jpeg);
+  min-height: 20px;
 }
-
-.foodpics {
-  display: grid;
-  grid-template: auto/ repeat(auto-fit, minmax(250px, 1fr));
-  width: 1580px;
-  height: 535px;
-
-}
-
-
-
 
 
 .recipe-box {
@@ -436,7 +426,8 @@ img {
   align-items: center;
   justify-content: center;
   padding: 50px 0;
-  background-color: #009688;
+  background-image: url(images/img9.jpeg);
+  background-repeat: no-repeat;
   background-size: 100%;
   border: solid 5px black;
 }
@@ -446,6 +437,7 @@ img {
   height: auto;
   max-width: 1200px;
   margin: 0 auto;
+
 }
 
 .brand {
